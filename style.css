@@ -6,10 +6,11 @@ footer {
   text-align: center;
   padding: 10px 0 8px 0;
   font-size: 0.95rem;
-  font-family: Arial, sans-serif;
+  font-family: 'Intel One Mono', monospace;
   letter-spacing: 0.5px;
   box-shadow: 0 -2px 8px rgba(64,127,200,0.08);
   margin-top: 24px;
+  border-radius: 20px;
 }
 @media (max-width: 800px) {
   .image-scroll {
@@ -57,7 +58,7 @@ h2 {
   color: #2a4d7a;
   margin: 18px 0 4px 0;
   text-align: center;
-  font-family: Arial, sans-serif;
+  font-family: 'Intel One Mono', monospace;
   font-weight: bold;
   letter-spacing: 1px;
   text-shadow: 0 2px 8px rgba(64,127,200,0.08);
@@ -68,18 +69,17 @@ h3 {
   color: #407fc8;
   margin: 0 0 12px 0;
   text-align: center;
-  font-family: Arial, sans-serif;
+  font-family: 'Intel One Mono', monospace;
   font-weight: normal;
   letter-spacing: 0.5px;
   text-shadow: 0 1px 4px rgba(64,127,200,0.06);
 }
 /* Add your CSS here */
 body {
-    font-family: Arial, sans-serif;
-    margin: 8
-    px;
-    padding: 5px;
-    background-color: #ffffff;
+  font-family: 'Intel One Mono', monospace;
+  margin: 8px;
+  padding: 5px;
+  background-color: #ffffff;
 }
 
 header h1 {
@@ -87,20 +87,20 @@ header h1 {
   color: #407fc8;
   text-align: center;
   margin: 10px 0 8px 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Intel One Mono', monospace;
   letter-spacing: 1px;
 }
 
 header p {
   font-size: 1.2rem;
-  color: #ffffff;
+  color: #3797c7;
   text-align: center;
   margin: 0 0 24px 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Intel One Mono', monospace;
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
-  background: #50a0e6;;
+  background: #ffffff;;
   border-radius: 10px;
   padding: 16px 12px;
   box-shadow: 0 2px 8px rgba(64,127,200,0.08);
@@ -175,8 +175,8 @@ header img {
   opacity: 0;
   display: flex;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -5;
+  right: 5;
   width: 600px;
   height: 375px;
   background: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
@@ -188,7 +188,7 @@ header img {
   box-sizing: border-box;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 10px;
 }
 
 
@@ -196,9 +196,14 @@ header img {
 .image-box:hover img {
   box-shadow: 0 8px 32px rgba(64,127,200,0.25), 0 2px 8px rgba(64,127,200,0.12);
 }
+.image-box p {
+  /* ...existing code... */
+  transition: opacity 0.7s;
+  transition-timing-function: ease-out;
+}
+
 .image-box:hover p {
   opacity: 0.95;
-  transition-timing-function: linear; 
-  transition: opacity 0.95s;
+  transition-timing-function: ease-in;
 }
 
