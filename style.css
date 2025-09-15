@@ -169,6 +169,7 @@ header img {
   justify-content: center;
   padding: 10px;
   border-radius: 8px;
+  cursor: pointer; /* Show pointer cursor on hover for better UX */
 }
 
 
